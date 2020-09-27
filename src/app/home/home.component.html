@@ -1,0 +1,98 @@
+<div class="bd-example">
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/images/1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Restaurant</h5>
+            <p>Made with Good Lunch Set.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/images/2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Dinner MENU</h5>
+            <p>It can not be used when it is reserved.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/images/3.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Captain's Grill and Bar</h5>
+            <p>All We Have Is now.</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div><br>
+  <!--header section -->
+  <h2 class="text-center">Restaurant Items</h2><br>
+  <div class="row" style="margin: 0">
+    <div class="col-sm-3 shadow p-2 mb-3 bg-white rounded" *ngFor="let list of itemList; let i = index" style="padding-bottom: 2rem">
+      <a href="{{list.siteLink}}" target="_blank">
+        <img [src]="list.imgSrc" class="img-thumbnail" alt="list{{i}}" id="imageId{{i}}">
+        <div class="text-center">
+          <h4>{{list.name}} </h4>
+          <p>{{list.address}} </p>
+        </div>
+      </a>
+    </div> 
+    <button class="btn btn-primarya" style="height: 50px;">Click</button> 
+  </div>
+  
+  <hr>
+
+  <h2 class="text-center">Wine Shope Items</h2><br>
+  <div class="row" style="margin: 0">
+    <div class="col-sm-3 shadow p-2 mb-3 bg-white rounded" *ngFor="let barList of barItemList; let i = index" style="padding-bottom: 2rem">
+      <a href="{{barList.siteLink}}" target="_blank">
+        <img [src]="barList.imgSrc" class="img-thumbnail" alt="list{{i}}" id="imageId{{i}}">
+        <div class="text-center">
+          <h4>{{barList.name}} </h4>
+          <p>{{barList.address}} </p>
+        </div>
+      </a>
+    </div>  
+  </div>  
+  
+<!--Contact Details Starts-->
+<section id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto text-center">
+        <h2 class="section-heading">Let's Get In Touch!</h2>
+        <hr class="my-4">
+        <p class="mb-5">Regarding Leather Products get in touch with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+      </div>
+    </div>
+    <div class="row contact">
+      <div class="col-sm-4 ml-auto text-center">
+        <img class="img-fluid icon" src="../assets/images/icons/phone-receiver.svg" alt="email">
+        <p class="contact-details">+91 7382385163</p>
+      </div>
+      <div class="col-sm-4 mr-auto text-center">
+        <a href="mailto:colorLib.in@gmail.com">
+        <img class="img-fluid icon" src="../assets/images/icons/envelope.svg" alt="email">
+        <p>
+          <a class="contact-details" href="mailto:colorLib.in@gmail.com">colorLib.in@gmail.com</a>
+        </p>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Contact Details Ends-->

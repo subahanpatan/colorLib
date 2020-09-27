@@ -1,0 +1,147 @@
+
+<div class="container p-5">
+    <div class="row">
+        <div class="col-md-12">  
+            <h4>Legal</h4>
+            <button type="button" (click)="toggle()" class="btn"><span>Turms of Use </span><i [class]="show ? 'far fa-angle-down' : 'fal fa-angle-up'"></i></button>  
+            <div *ngIf="show">
+                <p>These terms of use (the "Terms of Use") govern your use of our website www.colorLib.in 
+                    (the "Website") and our "ColorLib" application for mobile and handheld devices (the "App"). 
+                    The Website and the App are jointly referred to as the "Services"). Please read these 
+                    Terms of Use carefully before you download, install or use the Services. 
+                    If you do not agree to these Terms of Use, you may not install, download or use the Services. 
+                    By installing, downloading or using the Services, you signify your acceptance to the Terms of 
+                    Use and Privacy Policy (being hereby incorporated by reference herein) which takes effect on 
+                    the date on which you download, install or use the Services, and create a legally binding 
+                    arrangement to abide by the same.
+                    <a routerLink="/help/terms-and-conditions" routerLinkActive="active" target="_blank" class="text-danger"><strong>Read More</strong></a>
+                </p>
+            </div><hr>
+            
+            <button type="button" (click)="toggle1()" class="btn"><span>Privacy and Policy</span><i [class]="show ? 'far fa-angle-down' : 'fal fa-angle-up'"></i></button>  
+            <div *ngIf="show1">
+            <p>We ( Bundl Technologies Private Limited, alias "ColorLib" ) are fully committed to respecting 
+                your privacy and shall ensure that your personal information is safe with us. This privacy policy 
+                sets out the information practices of www.ColorLib.com ("Website") including the type of information 
+                is collected, how the information is collected, how the information is used and with whom it is shared. 
+                Reference to "you" in this Privacy Policy refers to the users of this Website whether or not you access 
+                the services available on the Website or consummate a transaction on the Website. By using or accessing 
+                this Website, you agree to the terms and conditions of this Privacy Policy. You also expressly consent 
+                to our use and disclosure of your Personal Information (as defined below) in any manner as described 
+                in this Privacy Policy and further signify your agreement to this Privacy Policy and the Terms of Use 
+                (being incorporated by reference herein). If you do not agree with the terms and conditions of this 
+                Privacy Policy, please do not proceed further or use or access this Website. 
+                <a routerLink="/help/terms-and-conditions" routerLinkActive="active" class="text-danger"><strong>Read More</strong></a>
+            </p>
+            </div><hr>
+
+            <button type="button" (click)="toggle2()" class="btn"><span>Cancellation and Refunds </span><i [class]="show ? 'far fa-angle-down' : 'fal fa-angle-up'"></i></button>  
+            <div *ngIf="show2">
+                <p>a) As a general rule you shall not be entitled to cancel your order once placed. 
+                    You may choose to cancel your order only within one-minute of the order being placed by you. 
+                    However, subject to your previous cancellation history, ColorLib reserves the right to deny any 
+                    refund to you pursuant to a cancellation initiated by you even if the same is within one-minute.  
+                    b)If you cancel your order after one minute of placing it, ColorLib shall have a right to charge 
+                    you 100% of the order amount as the cancellation fee , with a right to either not to refund the 
+                    order value in case your order is prepaid or recover from your subsequent order in case your order 
+                    is postpaid, to compensate our restaurant/merchants and delivery partners. c)ColorLib reserves the 
+                    right to charge you cancellation fee for the orders constrained to be cancelled by ColorLib for reasons 
+                    not attributable to ColorLib, including but not limited to: i)in the event if the address provided by 
+                    you is either wrong or falls outside the delivery zone; ii) failure to contact you by phone or email 
+                    at the time of delivering the order booking; iii) failure to deliver your order due to lack of information, 
+                    direction or authorization from you at the time of delivery; or iv) unavailability of all the items 
+                    ordered by you at the time of booking the order. However, in the unlikely event of an item on your 
+                    order being unavailable, ColorLib will contact you on the phone number provided to us at the time of 
+                    placing the order and inform you of such unavailability. In such an event you will be entitled to 
+                    cancel the entire order and shall be entitled to a refund to an amount upto 100% of the order value. 
+                    
+                    d)In case of cancellations for the reasons attributable to ColorLib or the restaurant partner or delivery 
+                    partners, ColorLib shall not charge you any cancellation fee.
+
+                    <a routerLink="/help/terms-and-conditions" routerLinkActive="active" class="text-danger"><strong>Read More</strong></a>
+                </p>
+            </div><hr>
+            
+            <button type="button" (click)="toggle3()" class="btn"><span>Turmsof Use for Recipe Items ON-TIME Assured </span><i [class]="show ? 'far fa-angle-down' : 'fal fa-angle-up'"></i></button>  
+            <div *ngIf="show3">
+                <p>
+                    These terms of use (the "Terms of Use") that govern your use of our service ColorLib ON-TIME / Assured  
+                ("ON-TIME" / "Assured") on our website www.colorLib.in (the "Website") and our ColorLib application for 
+                mobile and handheld devices (the "App"). The services on ON-TIME / Assured  available on our Website 
+                and the App are jointly referred to as the "On-Time Delivery". Please read these Terms of Use carefully 
+                before you use the Services. If you do not agree to these Terms of Use, you may not use the Services. 
+                By using the Services, you signify your acceptance to the Terms of Use and Privacy Policy 
+                (incorporated by reference herein) and creates a legally binding arrangement to abide by the same. 
+                <a routerLink="/help/terms-and-conditions" routerLinkActive="active" class="text-danger"><strong>Read More</strong></a>
+                </p>
+            </div><hr>
+        </div>
+    </div>
+    <router-outlet></router-outlet>
+</div>
+
+<!-- FAQ Section -->
+
+<div class="container p-5">
+    <div class="row">
+        <div class="col-md-12">
+            <h4>FAQs</h4>
+            <button type="button" (click)="toggle()" class="btn"><span>What is colorLib Customer Care Number?</span><i [class]="show ? 'far fa-angle-down' : 'fal fa-angle-up'"></i></button>  
+            <div *ngIf="show">
+                <p>We value our customer’s time and hence moved away from a single customer care number to a
+                    comprehensive chat-based support system for quick and easy resolution. You no longer have
+                    to go through the maze of an IVRS call support. Just search for your issue in the help 
+                    section on this page and initiate a chat with us. A customer care executive will be 
+                    assigned to you shortly. You can also email us your issue on colorLib.in@gmail.com
+
+                    Note: We value your privacy and your information is safe with us. Please do not reveal 
+                    any personal information, bank account number, OTP etc. to another person. A ColorLib 
+                    representative will never ask you for these details. Please do not reveal these details 
+                    to fraudsters and imposters claiming to be calling on our behalf. Be vigilant and do not 
+                    entertain phishing calls or emails.</p>
+                    <button type="submit" class="btn-btn-danger">
+                        <a href="mailto:colorLib.in@gmail.com?subject=What is colorLib Customer Care Number?">SEND AN EMAIL</a>
+                    </button>
+                    <div class="visible-sm-inline">
+                        <small>We will revert within 24-48 hrs</small>
+                    </div>              
+            </div><hr>
+            
+            <button type="button" (click)="toggle1()" class="btn"><span>I want to partner my restaurant & bar with ColorLib</span><i [class]="show ? 'far fa-angle-down' : 'fal fa-angle-up'"></i></button>  
+            <div *ngIf="show1">
+            <p><strong>Partner with us</strong></p>
+                <button type="submit" class="btn-btn-danger">
+                    <a href="mailto:colorLib.in@gmail.com?subject=What is colorLib Customer Care Number?">SEND AN EMAIL</a>
+                </button>
+                <div class="visible-sm-inline">
+                    <small>We will revert within 24-48 hrs</small>
+                </div>  
+            </div><hr>
+
+            <button type="button" (click)="toggle2()" class="btn"><span>I want to explore career opportunities with ColorLib </span><i [class]="show ? 'far fa-angle-down' : 'fal fa-angle-up'"></i></button>  
+            <div *ngIf="show2">
+                <p><strong>Join Our Team</strong></p>
+                <button type="submit" class="btn-btn-danger">
+                    <a href="mailto:colorLib.in@gmail.com?subject=What is colorLib Customer Care Number?">SEND AN EMAIL</a>
+                </button>
+                <div class="visible-sm-inline">
+                    <small>We will revert within 24-48 hrs</small>
+                </div>  
+            </div><hr>
+            
+            <button type="button" (click)="toggle3()" class="btn"><span>I want to provide Feedback </span><i [class]="show ? 'far fa-angle-down' : 'fal fa-angle-up'"></i></button>  
+            <div *ngIf="show3">
+                <p>
+                    These terms of use (the "Terms of Use") that govern your use of our service ColorLib ON-TIME / Assured  
+                ("ON-TIME" / "Assured") on our website www.ColorLib.in (the "Website") and our ColorLib application for 
+                mobile and handheld devices (the "App"). The services on ON-TIME / Assured  available on our Website 
+                and the App are jointly referred to as the "On-Time Delivery". Please read these Terms of Use carefully 
+                before you use the Services. If you do not agree to these Terms of Use, you may not use the Services. 
+                By using the Services, you signify your acceptance to the Terms of Use and Privacy Policy 
+                (incorporated by reference herein) and creates a legally binding arrangement to abide by the same. 
+                <a routerLink="/help/terms-and-conditions" class="text-danger"><strong>Read More</strong></a>
+                </p>
+            </div><hr>
+        </div>
+    </div>
+</div>
